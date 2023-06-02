@@ -10,7 +10,7 @@ function setup() {
   function fractalStairs(squares){
     let numberOfSquares = squares;
     let step = 5; // the size
-    let angle = TWO_PI / numberOfSquares + 40;
+    let angle = TWO_PI / numberOfSquares;
     let size = step;
     let x = width/2;
     let y = height/2;
