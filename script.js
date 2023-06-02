@@ -23,5 +23,6 @@ function setup() {
       translate(-x, -y);
       x += step * cos(angle);
       y += step * sin(angle);
+      size += step;
     }
   }
