@@ -1,22 +1,22 @@
 function setup() {
-    createCanvas(900, 900);
+    createCanvas(400, 400);
   }
   function draw() {
-    background("gray")
-    fractalStairs(100);
+    background("darkred")
+    fractalStairs(30);
   }
 
 
   function fractalStairs(squares){
     let numberOfSquares = squares;
     let step = 5; // the size
-    let angle = TWO_PI / numberOfSquares;
+    let angle = TWO_PI / numberOfSquares + 40;
     let size = step;
     let x = width/2;
     let y = height/2;
 
     for(let i = 0; i < numberOfSquares; i++){
-      nofill();
+      noFill();
       rectMode(CENTER);
       rect(x, y, size, size);
       translate(x,y);
