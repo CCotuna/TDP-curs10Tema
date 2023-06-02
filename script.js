@@ -16,7 +16,7 @@ function setup() {
     let y = height/2;
 
     for(let i = 0; i < numberOfSquares; i++){
-      // nofill();
+      nofill();
       rectMode(CENTER);
       rect(x, y, size, size);
       translate(x,y);
