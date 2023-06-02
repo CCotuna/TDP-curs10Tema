@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(500, 500);
   }
   function draw() {
     background("darkred")
@@ -9,12 +9,10 @@ function setup() {
 
   function fractalStairs(squares){
     let numberOfSquares = squares;
-    let step = 5; // the size
-    let angle = TWO_PI / numberOfSquares;
+    let step = 7; // the size
+    let angle = PI * 2 / numberOfSquares;
     let size = step;
-    let x = width/2;
-    let y = height/2;
-
+    let x = width/2, y = height/2;
     for(let i = 0; i < numberOfSquares; i++){
       noFill();
       rectMode(CENTER);
